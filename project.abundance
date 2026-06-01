@@ -2146,8 +2146,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.3024357239512855,
-      "y": 0.8445121951219513,
+      "x": 0.280358598207009,
+      "y": 0.8323170731707318,
       "uniqueID": "id-10075",
       "name": "Sidepanel-1",
       "ioValues": [
@@ -2238,8 +2238,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.6556156968876861,
-          "y": 0.375,
+          "x": 0.6577017114914426,
+          "y": 0.39329268292682923,
           "uniqueID": "id-10099",
           "ioValues": [
             {
@@ -2257,7 +2257,8 @@
             },
             {
               "name": "zDist",
-              "ioValue": 20.75
+              "ioValue": 10,
+              "currentEquation": "10"
             }
           ]
         }
@@ -3023,8 +3024,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.1817440912795436,
-      "y": 0.3292682926829268,
+      "x": 0.1719641401792991,
+      "y": 0.3201219512195122,
       "uniqueID": "id-5480",
       "name": "Side-braces",
       "topLevel": false,
@@ -3081,10 +3082,6 @@
           "uniqueID": "id-5606",
           "ioValues": [
             {
-              "name": "Shape 1",
-              "ioValue": null
-            },
-            {
               "name": "Shape 4",
               "ioValue": null
             }
@@ -3109,8 +3106,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.6055419722901385,
-          "y": 0.20731707317073172,
+          "x": 0.6063569682151589,
+          "y": 0.20121951219512196,
           "uniqueID": "id-5625",
           "name": "moveintoposition",
           "ioValues": [
@@ -3435,8 +3432,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.5745721271393643,
-          "y": 0.4329268292682927,
+          "x": 0.5704971475142624,
+          "y": 0.45426829268292684,
           "uniqueID": "id-7754",
           "name": "moveintoposition",
           "ioValues": [
@@ -3627,11 +3624,6 @@
           "ap2Name": "shape",
           "ap1ID": "id-5661",
           "ap2ID": "id-7694"
-        },
-        {
-          "ap2Name": "Shape 1",
-          "ap1ID": "id-5625",
-          "ap2ID": "id-5606"
         },
         {
           "ap2Name": "Shape 4",
