@@ -7,7 +7,8 @@
   "ioValues": [
     {
       "name": "Leg_height",
-      "ioValue": 35
+      "ioValue": 30,
+      "currentEquation": "30"
     },
     {
       "name": "table_width",
@@ -64,7 +65,7 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.47341337907375647,
+      "x": 0.48166259168704156,
       "y": 0.22865853658536586,
       "uniqueID": "id-5471",
       "ioValues": [
@@ -269,8 +270,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.23390383048084762,
-      "y": 0.5853658536585367,
+      "x": 0.23471882640586794,
+      "y": 0.5823170731707317,
       "uniqueID": "id-5413",
       "name": "F/B-braces",
       "ioValues": [
@@ -398,8 +399,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.6238185255198487,
-          "y": 0.7103658536585366,
+          "x": 0.6177669111654441,
+          "y": 0.7560975609756098,
           "uniqueID": "id-5447",
           "ioValues": [
             {
@@ -413,8 +414,8 @@
             },
             {
               "name": "yDist",
-              "ioValue": 32,
-              "currentEquation": "table_width/2 - 4"
+              "ioValue": 34,
+              "currentEquation": "table_width/2 - 2"
             },
             {
               "name": "zDist",
@@ -425,8 +426,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.632436837815811,
-          "y": 0.3079268292682927,
+          "x": 0.6299918500407498,
+          "y": 0.3018292682926829,
           "uniqueID": "id-5453",
           "ioValues": [
             {
@@ -440,8 +441,8 @@
             },
             {
               "name": "yDist",
-              "ioValue": 32,
-              "currentEquation": "table_width/2 - 4"
+              "ioValue": 34,
+              "currentEquation": "table_width/2 - 2"
             },
             {
               "name": "zDist",
@@ -528,7 +529,7 @@
         },
         {
           "name": "Leg_height",
-          "ioValue": 35
+          "ioValue": 30
         }
       ],
       "topLevel": false,
@@ -621,7 +622,7 @@
             },
             {
               "name": "zDist",
-              "ioValue": 35
+              "ioValue": 30
             }
           ]
         }
@@ -677,7 +678,7 @@
         },
         {
           "name": "Leg_height",
-          "ioValue": 35
+          "ioValue": 30
         }
       ],
       "topLevel": false,
@@ -869,7 +870,7 @@
             },
             {
               "name": "zDist",
-              "ioValue": 33
+              "ioValue": 28
             }
           ]
         },
@@ -890,7 +891,7 @@
           "ioValues": [
             {
               "name": "x",
-              "ioValue": 35
+              "ioValue": 30
             }
           ],
           "currentEquation": "x - 2"
@@ -974,7 +975,7 @@
             },
             {
               "name": "zDist",
-              "ioValue": 33
+              "ioValue": 28
             }
           ]
         },
@@ -999,7 +1000,7 @@
             },
             {
               "name": "zDist",
-              "ioValue": 33
+              "ioValue": 28
             }
           ]
         },
@@ -1522,8 +1523,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.4123879380603097,
-      "y": 0.8109756097560976,
+      "x": 0.4140179299103504,
+      "y": 0.8201219512195123,
       "uniqueID": "id-6080",
       "name": "bottom_platform",
       "ioValues": [
@@ -1537,7 +1538,7 @@
         },
         {
           "name": "Leg_height",
-          "ioValue": 35
+          "ioValue": 30
         }
       ],
       "topLevel": false,
@@ -2419,14 +2420,14 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.27787307032590053,
-      "y": 0.17682926829268295,
+      "x": 0.2787286063569682,
+      "y": 0.18902439024390244,
       "uniqueID": "id-5324",
       "name": "4x4post",
       "ioValues": [
         {
           "name": "Leg_height",
-          "ioValue": 35
+          "ioValue": 30
         },
         {
           "name": "table_width",
@@ -2487,7 +2488,7 @@
             },
             {
               "name": "height",
-              "ioValue": 35,
+              "ioValue": 30,
               "currentEquation": "Leg_height"
             }
           ]
@@ -2536,7 +2537,7 @@
             },
             {
               "name": "height",
-              "ioValue": 35,
+              "ioValue": 30,
               "currentEquation": "Leg_height"
             }
           ]
@@ -3022,8 +3023,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.202118989405053,
-      "y": 0.38414634146341464,
+      "x": 0.1882640586797066,
+      "y": 0.3597560975609756,
       "uniqueID": "id-5480",
       "name": "Side-braces",
       "topLevel": false,
@@ -3058,8 +3059,8 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.39697542533081287,
-          "y": 0.2682926829268293,
+          "x": 0.39119804400978,
+          "y": 0.27439024390243905,
           "uniqueID": "id-5483",
           "ioValues": [
             {
@@ -3068,8 +3069,8 @@
             },
             {
               "name": "height",
-              "ioValue": 32,
-              "currentEquation": "table_length - 4"
+              "ioValue": 26,
+              "currentEquation": "table_length - 10"
             }
           ]
         },
@@ -3091,8 +3092,8 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.390359168241966,
-          "y": 0.7591463414634146,
+          "x": 0.39119804400978,
+          "y": 0.7804878048780488,
           "uniqueID": "id-5661",
           "ioValues": [
             {
@@ -3101,8 +3102,8 @@
             },
             {
               "name": "height",
-              "ioValue": 32,
-              "currentEquation": "table_length - 4"
+              "ioValue": 26,
+              "currentEquation": "table_length - 10"
             }
           ]
         },
@@ -3144,8 +3145,8 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -16,
-                  "currentEquation": "-table_length/2 + 2"
+                  "ioValue": -14,
+                  "currentEquation": "-table_length/2 + 4"
                 },
                 {
                   "name": "yDist",
@@ -3154,15 +3155,15 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 33,
+                  "ioValue": 28,
                   "currentEquation": "Leg_height - 2"
                 }
               ]
             },
             {
               "atomType": "Move",
-              "x": 0.46124763705103966,
-              "y": 0.43902439024390244,
+              "x": 0.4645476772616137,
+              "y": 0.4268292682926829,
               "uniqueID": "id-5636",
               "ioValues": [
                 {
@@ -3171,8 +3172,8 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -16,
-                  "currentEquation": "-table_length/2 +2"
+                  "ioValue": -14,
+                  "currentEquation": "-table_length/2 + 4"
                 },
                 {
                   "name": "yDist",
@@ -3181,7 +3182,7 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 33,
+                  "ioValue": 28,
                   "currentEquation": "Leg_height - 2"
                 }
               ]
@@ -3434,8 +3435,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.5793950850661626,
-          "y": 0.4085365853658537,
+          "x": 0.5794621026894865,
+          "y": 0.39634146341463417,
           "uniqueID": "id-7754",
           "name": "moveintoposition",
           "ioValues": [
@@ -3460,8 +3461,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.46975425330812853,
-              "y": 0.7103658536585366,
+              "x": 0.4702526487367564,
+              "y": 0.7469512195121951,
               "uniqueID": "id-7756",
               "ioValues": [
                 {
@@ -3475,8 +3476,8 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -29,
-                  "currentEquation": "-table_width/2 +7"
+                  "ioValue": -32,
+                  "currentEquation": "-table_width/2 +4"
                 },
                 {
                   "name": "zDist",
@@ -3502,8 +3503,8 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 29,
-                  "currentEquation": "table_width/2 - 7"
+                  "ioValue": 32,
+                  "currentEquation": "table_width/2 - 4"
                 },
                 {
                   "name": "zDist",
@@ -3713,7 +3714,7 @@
             },
             {
               "name": "zDist",
-              "ioValue": 33,
+              "ioValue": 28,
               "currentEquation": "Leg_height - 2"
             }
           ]
