@@ -5522,8 +5522,8 @@
                     },
                     {
                       "atomType": "Rectangle",
-                      "x": 0.6582633053221288,
-                      "y": 0.8955223880597015,
+                      "x": 0.5479704797047971,
+                      "y": 0.9176829268292682,
                       "uniqueID": "id-13127",
                       "ioValues": [
                         {
@@ -5538,8 +5538,8 @@
                     },
                     {
                       "atomType": "Extrude",
-                      "x": 0.7239512855209743,
-                      "y": 0.8719512195121951,
+                      "x": 0.6217712177121771,
+                      "y": 0.875,
                       "uniqueID": "id-13131",
                       "ioValues": [
                         {
@@ -5585,8 +5585,8 @@
                     },
                     {
                       "atomType": "Intersection",
-                      "x": 0.8662361623616236,
-                      "y": 0.6067073170731707,
+                      "x": 0.7970479704797049,
+                      "y": 0.6371951219512195,
                       "uniqueID": "id-14528",
                       "ioValues": [
                         {
@@ -5669,8 +5669,8 @@
                     },
                     {
                       "atomType": "Intersection",
-                      "x": 0.8505535055350554,
-                      "y": 0.774390243902439,
+                      "x": 0.7785977859778598,
+                      "y": 0.798780487804878,
                       "uniqueID": "id-20509",
                       "ioValues": [
                         {
@@ -5685,8 +5685,8 @@
                     },
                     {
                       "atomType": "Move",
-                      "x": 0.7509225092250922,
-                      "y": 0.6554878048780487,
+                      "x": 0.6891143911439114,
+                      "y": 0.6615853658536586,
                       "uniqueID": "id-20513",
                       "ioValues": [
                         {
@@ -5709,8 +5709,8 @@
                     },
                     {
                       "atomType": "Export",
-                      "x": 0.911764705882353,
-                      "y": 0.8328358208955224,
+                      "x": 0.8413284132841328,
+                      "y": 0.8262195121951219,
                       "uniqueID": "id-20519",
                       "ioValues": [
                         {
@@ -5728,14 +5728,14 @@
                         },
                         {
                           "name": "Part Name",
-                          "ioValue": "Drawer_rail",
-                          "currentEquation": "Drawer_rail"
+                          "ioValue": "Drawer_rail_outie",
+                          "currentEquation": "Drawer_rail_outie"
                         }
                       ],
                       "type": null,
                       "resolution": 96,
                       "importIndex": 0,
-                      "partName": "Drawer_rail"
+                      "partName": "Drawer_rail_outie"
                     },
                     {
                       "atomType": "GitHubMolecule",
@@ -5981,8 +5981,8 @@
                         },
                         {
                           "atomType": "Assembly",
-                          "x": 0.7979704797047971,
-                          "y": 0.646341463414634,
+                          "x": 0.8007380073800738,
+                          "y": 0.6554878048780487,
                           "uniqueID": "id-13499",
                           "ioValues": [
                             {
@@ -6988,8 +6988,8 @@
                             },
                             {
                               "name": "Scale Factor",
-                              "ioValue": 1.03,
-                              "currentEquation": "1.03"
+                              "ioValue": 1.1,
+                              "currentEquation": "1.1"
                             }
                           ],
                           "topLevel": false,
@@ -7255,6 +7255,36 @@
                         }
                       ],
                       "fileTypeVersion": 1
+                    },
+                    {
+                      "atomType": "Export",
+                      "x": 0.9123616236162361,
+                      "y": 0.6951219512195121,
+                      "uniqueID": "id-21615",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "File Type",
+                          "ioValue": "STL",
+                          "currentEquation": "STL"
+                        },
+                        {
+                          "name": "Resolution (dpi)",
+                          "ioValue": 96
+                        },
+                        {
+                          "name": "Part Name",
+                          "ioValue": "Drawer_rail_innie",
+                          "currentEquation": "Drawer_rail_innie"
+                        }
+                      ],
+                      "type": null,
+                      "resolution": 96,
+                      "importIndex": 0,
+                      "partName": "Drawer_rail_innie"
                     }
                   ],
                   "allConnectors": [
@@ -7332,6 +7362,11 @@
                       "ap2Name": "geometry",
                       "ap1ID": "id-13148",
                       "ap2ID": "id-19497"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-14528",
+                      "ap2ID": "id-21615"
                     },
                     {
                       "ap2Name": "Shape 4",
