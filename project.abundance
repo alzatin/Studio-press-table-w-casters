@@ -4484,8 +4484,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.2507042253521127,
-          "y": 0.582089552238806,
+          "x": 0.17934272300469484,
+          "y": 0.27761194029850744,
           "uniqueID": "id-22702",
           "name": "Drill_holder",
           "topLevel": false,
@@ -6009,8 +6009,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.43849765258215967,
-          "y": 0.6537313432835821,
+          "x": 0.3267605633802817,
+          "y": 0.24776119402985078,
           "uniqueID": "id-25526",
           "ioValues": [
             {
@@ -6041,6 +6041,35 @@
             {
               "name": "Shape 1",
               "ioValue": null
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": null
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.4394366197183099,
+          "y": 0.2537313432835821,
+          "uniqueID": "id-25542",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 4,
+              "currentEquation": "4"
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
             }
           ]
         }
@@ -6057,9 +6086,19 @@
           "ap2ID": "id-25532"
         },
         {
+          "ap2Name": "geometry",
+          "ap1ID": "id-25526",
+          "ap2ID": "id-25542"
+        },
+        {
           "ap2Name": "number or geometry",
           "ap1ID": "id-25532",
           "ap2ID": "id-22697"
+        },
+        {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-25542",
+          "ap2ID": "id-25532"
         }
       ],
       "fileTypeVersion": 1
