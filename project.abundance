@@ -148,8 +148,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.7730627306273062,
-      "y": 0.5426829268292682,
+      "x": 0.8093896713615023,
+      "y": 0.6656716417910449,
       "uniqueID": "id-6127",
       "ioValues": [
         {
@@ -157,11 +157,7 @@
           "ioValue": null
         },
         {
-          "name": "Shape 2",
-          "ioValue": null
-        },
-        {
-          "name": "Shape 3",
+          "name": "Shape 4",
           "ioValue": null
         }
       ]
@@ -239,40 +235,6 @@
       "y": 0.44200000000000006,
       "uniqueID": "id-10087",
       "name": "ply_thick"
-    },
-    {
-      "atomType": "Label",
-      "x": 0.8349120433017592,
-      "y": 0.7439024390243902,
-      "uniqueID": "id-10713",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "text",
-          "ioValue": "label",
-          "currentEquation": "label"
-        },
-        {
-          "name": "endPosition",
-          "ioValue": [
-            20,
-            30,
-            0
-          ]
-        },
-        {
-          "name": "color",
-          "ioValue": "#3F3CDD",
-          "currentEquation": "#3F3CDD"
-        },
-        {
-          "name": "fontSize",
-          "ioValue": 40
-        }
-      ]
     },
     {
       "atomType": "Input",
@@ -4489,7 +4451,7 @@
     {
       "atomType": "Molecule",
       "x": 0.4028169014084507,
-      "y": 0.9253731343283582,
+      "y": 0.9194029850746269,
       "uniqueID": "id-22695",
       "name": "tool_holders",
       "ioValues": [
@@ -4522,8 +4484,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.23661971830985915,
-          "y": 0.6029850746268657,
+          "x": 0.2507042253521127,
+          "y": 0.582089552238806,
           "uniqueID": "id-22702",
           "name": "Drill_holder",
           "topLevel": false,
@@ -5857,6 +5819,33 @@
               "resolution": 96,
               "importIndex": 0,
               "partName": "Drill_holder"
+            },
+            {
+              "atomType": "Rotate",
+              "x": 0.831924882629108,
+              "y": 0.6029850746268657,
+              "uniqueID": "id-25520",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "x-axis degrees",
+                  "ioValue": -90,
+                  "currentEquation": "-90"
+                },
+                {
+                  "name": "y-axis degrees",
+                  "ioValue": 0,
+                  "currentEquation": "0"
+                },
+                {
+                  "name": "z-axis degrees",
+                  "ioValue": -90,
+                  "currentEquation": "-90"
+                }
+              ]
             }
           ],
           "allConnectors": [
@@ -5971,14 +5960,14 @@
               "ap2ID": "id-25385"
             },
             {
-              "ap2Name": "number or geometry",
+              "ap2Name": "geometry",
               "ap1ID": "id-25385",
-              "ap2ID": "id-22704"
+              "ap2ID": "id-25459"
             },
             {
               "ap2Name": "geometry",
               "ap1ID": "id-25385",
-              "ap2ID": "id-25459"
+              "ap2ID": "id-25520"
             },
             {
               "ap2Name": "geometry",
@@ -6009,15 +5998,67 @@
               "ap2Name": "geometry",
               "ap1ID": "id-25459",
               "ap2ID": "id-25462"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-25520",
+              "ap2ID": "id-22704"
             }
           ],
           "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Move",
+          "x": 0.43849765258215967,
+          "y": 0.6537313432835821,
+          "uniqueID": "id-25526",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 14
+            },
+            {
+              "name": "yDist",
+              "ioValue": 25
+            },
+            {
+              "name": "zDist",
+              "ioValue": 25.75,
+              "currentEquation": "25.75"
+            }
+          ]
+        },
+        {
+          "atomType": "Assembly",
+          "x": 0.6967136150234742,
+          "y": 0.5731343283582089,
+          "uniqueID": "id-25532",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": null
+            }
+          ]
         }
       ],
       "allConnectors": [
         {
+          "ap2Name": "geometry",
+          "ap1ID": "id-22702",
+          "ap2ID": "id-25526"
+        },
+        {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-25526",
+          "ap2ID": "id-25532"
+        },
+        {
           "ap2Name": "number or geometry",
-          "ap1ID": "id-22699",
+          "ap1ID": "id-25532",
           "ap2ID": "id-22697"
         }
       ],
@@ -7306,8 +7347,8 @@
                     },
                     {
                       "atomType": "ExtractTag",
-                      "x": 0.7343173431734318,
-                      "y": 0.2713414634146341,
+                      "x": 0.6892018779342723,
+                      "y": 0.2447761194029851,
                       "uniqueID": "id-13148",
                       "name": "Extract Rail_innie",
                       "ioValues": [
@@ -9206,11 +9247,6 @@
       "ap2ID": "id-6115"
     },
     {
-      "ap2Name": "Shape 2",
-      "ap1ID": "id-6074",
-      "ap2ID": "id-6127"
-    },
-    {
       "ap2Name": "Shape 1",
       "ap1ID": "id-6115",
       "ap2ID": "id-6127"
@@ -9226,11 +9262,6 @@
       "ap2ID": "id-22695"
     },
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-6127",
-      "ap2ID": "id-10713"
-    },
-    {
       "ap2Name": "ply_thick",
       "ap1ID": "id-10087",
       "ap2ID": "id-10075"
@@ -9239,11 +9270,6 @@
       "ap2Name": "Shape 12",
       "ap1ID": "id-5413",
       "ap2ID": "id-5471"
-    },
-    {
-      "ap2Name": "Shape 3",
-      "ap1ID": "id-5841",
-      "ap2ID": "id-6127"
     },
     {
       "ap2Name": "Shape 5",
@@ -9271,11 +9297,6 @@
       "ap2ID": "id-9504"
     },
     {
-      "ap2Name": "startPosition",
-      "ap1ID": "id-10752",
-      "ap2ID": "id-10713"
-    },
-    {
       "ap2Name": "Shape 1",
       "ap1ID": "id-5324",
       "ap2ID": "id-5471"
@@ -9294,6 +9315,11 @@
       "ap2Name": "Shape 7",
       "ap1ID": "id-12145",
       "ap2ID": "id-6115"
+    },
+    {
+      "ap2Name": "Shape 4",
+      "ap1ID": "id-22695",
+      "ap2ID": "id-6127"
     },
     {
       "ap2Name": "Shape 6",
