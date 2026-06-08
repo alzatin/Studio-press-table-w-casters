@@ -5523,8 +5523,7 @@
                       "ioValues": [
                         {
                           "name": "x length",
-                          "ioValue": 6,
-                          "currentEquation": "6"
+                          "ioValue": 6
                         },
                         {
                           "name": "y length",
@@ -5607,6 +5606,61 @@
                         }
                       ],
                       "selectedColor": "Keep Out"
+                    },
+                    {
+                      "atomType": "Move",
+                      "x": 0.8270308123249299,
+                      "y": 0.3134328358208955,
+                      "uniqueID": "id-19497",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "xDist",
+                          "ioValue": -0.75
+                        },
+                        {
+                          "name": "yDist",
+                          "ioValue": 0
+                        },
+                        {
+                          "name": "zDist",
+                          "ioValue": 0
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Tag",
+                      "x": 0.6190476190476191,
+                      "y": 0.28656716417910444,
+                      "uniqueID": "id-19503",
+                      "name": "Rail_outie",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ],
+                      "tags": [
+                        "Rail_outie"
+                      ]
+                    },
+                    {
+                      "atomType": "ExtractTag",
+                      "x": 0.7296918767507002,
+                      "y": 0.6447761194029851,
+                      "uniqueID": "id-19506",
+                      "name": "Extract Tag",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ],
+                      "tag": "Rail_outie",
+                      "tagIndex": 0
                     },
                     {
                       "atomType": "GitHubMolecule",
@@ -6883,63 +6937,6 @@
                         }
                       ],
                       "fileTypeVersion": 1
-                    },
-                    {
-                      "atomType": "Move",
-                      "x": 0.8270308123249299,
-                      "y": 0.3134328358208955,
-                      "uniqueID": "id-19497",
-                      "ioValues": [
-                        {
-                          "name": "geometry",
-                          "ioValue": "__GEOMETRY_INPUT__"
-                        },
-                        {
-                          "name": "xDist",
-                          "ioValue": -0.75,
-                          "currentEquation": "-.75"
-                        },
-                        {
-                          "name": "yDist",
-                          "ioValue": 0
-                        },
-                        {
-                          "name": "zDist",
-                          "ioValue": 0,
-                          "currentEquation": "0"
-                        }
-                      ]
-                    },
-                    {
-                      "atomType": "Tag",
-                      "x": 0.6190476190476191,
-                      "y": 0.28656716417910444,
-                      "uniqueID": "id-19503",
-                      "name": "Rail_outie",
-                      "ioValues": [
-                        {
-                          "name": "geometry",
-                          "ioValue": "__GEOMETRY_INPUT__"
-                        }
-                      ],
-                      "tags": [
-                        "Rail_outie"
-                      ]
-                    },
-                    {
-                      "atomType": "ExtractTag",
-                      "x": 0.7296918767507002,
-                      "y": 0.6447761194029851,
-                      "uniqueID": "id-19506",
-                      "name": "Extract Tag",
-                      "ioValues": [
-                        {
-                          "name": "geometry",
-                          "ioValue": "__GEOMETRY_INPUT__"
-                        }
-                      ],
-                      "tag": "Rail_outie",
-                      "tagIndex": 0
                     }
                   ],
                   "allConnectors": [
@@ -7024,16 +7021,6 @@
                       "ap2ID": "id-13029"
                     },
                     {
-                      "ap2Name": "geometry",
-                      "ap1ID": "id-13108",
-                      "ap2ID": "id-19503"
-                    },
-                    {
-                      "ap2Name": "geometry",
-                      "ap1ID": "id-13242",
-                      "ap2ID": "id-17498"
-                    },
-                    {
                       "ap2Name": "geometry1",
                       "ap1ID": "id-19497",
                       "ap2ID": "id-14528"
@@ -7042,6 +7029,16 @@
                       "ap2Name": "Shape 3",
                       "ap1ID": "id-19503",
                       "ap2ID": "id-13029"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-13108",
+                      "ap2ID": "id-19503"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-13242",
+                      "ap2ID": "id-17498"
                     }
                   ],
                   "fileTypeVersion": 1
