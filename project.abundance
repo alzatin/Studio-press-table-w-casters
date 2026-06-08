@@ -5295,8 +5295,8 @@
                 },
                 {
                   "atomType": "Molecule",
-                  "x": 0.2612044817927171,
-                  "y": 0.8238805970149253,
+                  "x": 0.26014760147601473,
+                  "y": 0.8323170731707318,
                   "uniqueID": "id-12986",
                   "name": "Drawer_rail",
                   "topLevel": false,
@@ -7582,8 +7582,8 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 14,
-                  "currentEquation": "table_length/2 - 4"
+                  "ioValue": 11.5,
+                  "currentEquation": "table_length/2 - 6 - ply_thin"
                 },
                 {
                   "name": "yDist",
@@ -7598,8 +7598,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.6485239852398524,
-              "y": 0.6097560975609756,
+              "x": 0.6457564575645757,
+              "y": 0.6219512195121951,
               "uniqueID": "id-21558",
               "ioValues": [
                 {
@@ -7608,8 +7608,8 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -14,
-                  "currentEquation": "-table_length/2 + 4"
+                  "ioValue": -12,
+                  "currentEquation": "-table_length/2 + 6"
                 },
                 {
                   "name": "yDist",
