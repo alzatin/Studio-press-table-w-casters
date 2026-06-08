@@ -148,8 +148,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.8093896713615023,
-      "y": 0.6656716417910449,
+      "x": 0.812206572769953,
+      "y": 0.6835820895522389,
       "uniqueID": "id-6127",
       "ioValues": [
         {
@@ -1254,8 +1254,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.5434173669467788,
-      "y": 0.7373134328358208,
+      "x": 0.5446009389671361,
+      "y": 0.6925373134328359,
       "uniqueID": "id-6028",
       "name": "BOX_fan",
       "topLevel": false,
@@ -9291,14 +9291,14 @@
       "ap2ID": "id-6127"
     },
     {
-      "ap2Name": "number or geometry",
-      "ap1ID": "id-6115",
-      "ap2ID": "id-5311"
-    },
-    {
       "ap2Name": "full_table",
       "ap1ID": "id-6115",
       "ap2ID": "id-22695"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-6127",
+      "ap2ID": "id-5311"
     },
     {
       "ap2Name": "ply_thick",
