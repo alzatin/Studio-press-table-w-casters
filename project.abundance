@@ -674,8 +674,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.2942135289323553,
-      "y": 0.3719512195121951,
+      "x": 0.29664660361135,
+      "y": 0.35670731707317077,
       "uniqueID": "id-5877",
       "name": "Top_apron",
       "ioValues": [
@@ -765,7 +765,7 @@
         },
         {
           "atomType": "Move",
-          "x": 0.5916870415647921,
+          "x": 0.58469475494411,
           "y": 0.3170731707317073,
           "uniqueID": "id-5886",
           "ioValues": [
@@ -785,14 +785,14 @@
             },
             {
               "name": "zDist",
-              "ioValue": 0
+              "ioValue": 28
             }
           ]
         },
         {
           "atomType": "Move",
-          "x": 0.5729421352893236,
-          "y": 0.125,
+          "x": 0.6113499570077386,
+          "y": 0.1524390243902439,
           "uniqueID": "id-5887",
           "ioValues": [
             {
@@ -811,7 +811,7 @@
             },
             {
               "name": "zDist",
-              "ioValue": 0
+              "ioValue": 28
             }
           ]
         },
@@ -831,8 +831,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.7202127659574468,
-          "y": 0.15853658536585366,
+          "x": 0.7764402407566637,
+          "y": 0.2103658536585366,
           "uniqueID": "id-5890",
           "ioValues": [
             {
@@ -862,30 +862,6 @@
           "type": "number"
         },
         {
-          "atomType": "Move",
-          "x": 0.8329787234042553,
-          "y": 0.2652439024390244,
-          "uniqueID": "id-5937",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "xDist",
-              "ioValue": 0
-            },
-            {
-              "name": "yDist",
-              "ioValue": 0
-            },
-            {
-              "name": "zDist",
-              "ioValue": 28
-            }
-          ]
-        },
-        {
           "atomType": "Input",
           "x": 0.025384615384615384,
           "y": 0.3384615384615385,
@@ -895,8 +871,8 @@
         },
         {
           "atomType": "Equation",
-          "x": 0.7042747021723896,
-          "y": 0.4656716417910448,
+          "x": 0.6689595872742906,
+          "y": 0.46341463414634143,
           "uniqueID": "id-5946",
           "name": "x - 2",
           "ioValues": [
@@ -992,8 +968,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.5585106382978723,
-          "y": 0.8414634146341464,
+          "x": 0.6001719690455718,
+          "y": 0.8079268292682927,
           "uniqueID": "id-5969",
           "ioValues": [
             {
@@ -1017,8 +993,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.7042553191489362,
-          "y": 0.6646341463414633,
+          "x": 0.7386070507308684,
+          "y": 0.7286585365853658,
           "uniqueID": "id-5975",
           "ioValues": [
             {
@@ -1033,8 +1009,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.8585106382978724,
-          "y": 0.5640243902439024,
+          "x": 0.8555460017196904,
+          "y": 0.5518292682926829,
           "uniqueID": "id-5980",
           "ioValues": [
             {
@@ -1042,7 +1018,7 @@
               "ioValue": null
             },
             {
-              "name": "Shape 2",
+              "name": "Shape 3",
               "ioValue": null
             }
           ]
@@ -1164,9 +1140,9 @@
           "ap2ID": "id-5890"
         },
         {
-          "ap2Name": "geometry",
+          "ap2Name": "Shape 3",
           "ap1ID": "id-5890",
-          "ap2ID": "id-5937"
+          "ap2ID": "id-5980"
         },
         {
           "ap2Name": "x",
@@ -1184,19 +1160,9 @@
           "ap2ID": "id-6022"
         },
         {
-          "ap2Name": "Shape 2",
-          "ap1ID": "id-5937",
-          "ap2ID": "id-5980"
-        },
-        {
           "ap2Name": "x",
           "ap1ID": "id-5943",
           "ap2ID": "id-5946"
-        },
-        {
-          "ap2Name": "zDist",
-          "ap1ID": "id-5946",
-          "ap2ID": "id-5937"
         },
         {
           "ap2Name": "zDist",
@@ -1207,6 +1173,16 @@
           "ap2Name": "zDist",
           "ap1ID": "id-5946",
           "ap2ID": "id-5969"
+        },
+        {
+          "ap2Name": "zDist",
+          "ap1ID": "id-5946",
+          "ap2ID": "id-5886"
+        },
+        {
+          "ap2Name": "zDist",
+          "ap1ID": "id-5946",
+          "ap2ID": "id-5887"
         },
         {
           "ap2Name": "geometry",
@@ -5571,6 +5547,22 @@
                       "tagIndex": 0
                     },
                     {
+                      "atomType": "Intersection",
+                      "x": 0.7652622527944969,
+                      "y": 0.5914634146341463,
+                      "uniqueID": "id-14528",
+                      "ioValues": [
+                        {
+                          "name": "geometry1",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "geometry2",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ]
+                    },
+                    {
                       "atomType": "GitHubMolecule",
                       "x": 0.5893098782138024,
                       "y": 0.20731707317073172,
@@ -6845,22 +6837,6 @@
                         }
                       ],
                       "fileTypeVersion": 1
-                    },
-                    {
-                      "atomType": "Intersection",
-                      "x": 0.7652622527944969,
-                      "y": 0.5914634146341463,
-                      "uniqueID": "id-14528",
-                      "ioValues": [
-                        {
-                          "name": "geometry1",
-                          "ioValue": "__GEOMETRY_INPUT__"
-                        },
-                        {
-                          "name": "geometry2",
-                          "ioValue": "__GEOMETRY_INPUT__"
-                        }
-                      ]
                     }
                   ],
                   "allConnectors": [
