@@ -120,8 +120,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.5981220657276995,
-      "y": 0.3373134328358209,
+      "x": 0.5994397759103641,
+      "y": 0.34626865671641793,
       "uniqueID": "id-6115",
       "ioValues": [
         {
@@ -4076,8 +4076,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.26330532212885155,
-      "y": 0.8925373134328359,
+      "x": 0.2149859943977591,
+      "y": 0.8895522388059701,
       "uniqueID": "id-12145",
       "name": "Casters",
       "topLevel": false,
@@ -4488,8 +4488,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.41526610644257705,
-      "y": 0.8537313432835821,
+      "x": 0.4019607843137255,
+      "y": 0.5850746268656717,
       "uniqueID": "id-10075",
       "name": "Interior",
       "ioValues": [
@@ -7749,6 +7749,91 @@
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.39355742296918766,
+      "y": 0.9074626865671642,
+      "uniqueID": "id-22695",
+      "name": "tool_holders",
+      "ioValues": [
+        {
+          "name": "full_table",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-22697",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.021449999999999997,
+          "y": 0.3552238805970149,
+          "uniqueID": "id-22699",
+          "name": "full_table",
+          "type": "geometry"
+        },
+        {
+          "atomType": "Molecule",
+          "x": 0.23739495798319327,
+          "y": 0.591044776119403,
+          "uniqueID": "id-22702",
+          "name": "Drill_holder",
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-22704",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.17787114845938376,
+              "y": 0.43582089552238806,
+              "uniqueID": "id-22706",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 6
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 6,
+                  "currentEquation": "6"
+                }
+              ]
+            }
+          ],
+          "allConnectors": [],
+          "fileTypeVersion": 1
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-22699",
+          "ap2ID": "id-22697"
+        }
+      ],
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
@@ -7836,6 +7921,11 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-6115",
       "ap2ID": "id-5311"
+    },
+    {
+      "ap2Name": "full_table",
+      "ap1ID": "id-6115",
+      "ap2ID": "id-22695"
     },
     {
       "ap2Name": "geometry",
