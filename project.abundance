@@ -5959,8 +5959,8 @@
             },
             {
               "name": "c_height",
-              "ioValue": 5,
-              "currentEquation": "5"
+              "ioValue": 4,
+              "currentEquation": "4"
             }
           ],
           "topLevel": false,
@@ -5979,8 +5979,8 @@
             },
             {
               "atomType": "Rectangle",
-              "x": 0.2300469483568075,
-              "y": 0.4059701492537313,
+              "x": 0.23849765258215963,
+              "y": 0.3940298507462686,
               "uniqueID": "id-25554",
               "ioValues": [
                 {
@@ -6028,7 +6028,7 @@
                 },
                 {
                   "name": "height",
-                  "ioValue": 5
+                  "ioValue": 4
                 }
               ]
             },
@@ -6091,8 +6091,8 @@
             },
             {
               "atomType": "Assembly",
-              "x": 0.764319248826291,
-              "y": 0.5283582089552239,
+              "x": 0.8394366197183099,
+              "y": 0.3402985074626866,
               "uniqueID": "id-25585",
               "ioValues": [
                 {
@@ -6140,6 +6140,316 @@
                   "ioValue": 4
                 }
               ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.5173708920187794,
+              "y": 0.3253731343283582,
+              "uniqueID": "id-25599",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 4,
+                  "currentEquation": "c_height"
+                }
+              ]
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.3342723004694836,
+              "y": 0.30149253731343284,
+              "uniqueID": "id-25603",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 7.5,
+                  "currentEquation": "c_width -.5"
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 6.5,
+                  "currentEquation": "c_depth -.5"
+                }
+              ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.5539906103286385,
+              "y": 0.42686567164179107,
+              "uniqueID": "id-25607",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 0.5,
+                  "currentEquation": ".5"
+                }
+              ]
+            },
+            {
+              "atomType": "Difference",
+              "x": 0.7380281690140844,
+              "y": 0.6626865671641792,
+              "uniqueID": "id-25613",
+              "ioValues": [
+                {
+                  "name": "retain",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "remove",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "GitHubMolecule",
+              "x": 0.8140845070422535,
+              "y": 0.5850746268656717,
+              "uniqueID": "id-25662",
+              "name": "Filet_Vertical_Edges",
+              "ioValues": [
+                {
+                  "name": "Shape",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "Radius",
+                  "ioValue": 1,
+                  "currentEquation": "1"
+                },
+                {
+                  "name": "Bounding_Box",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "topLevel": false,
+              "allAtoms": [
+                {
+                  "atomType": "Output",
+                  "x": 0.98,
+                  "y": 0.5,
+                  "uniqueID": "id-25652",
+                  "ioValues": [
+                    {
+                      "name": "number or geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.021449999999999997,
+                  "y": 0.13,
+                  "uniqueID": "id-25653",
+                  "name": "Shape",
+                  "type": "geometry"
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.021449999999999997,
+                  "y": 0.20800000000000002,
+                  "uniqueID": "id-25654",
+                  "name": "Radius"
+                },
+                {
+                  "atomType": "Rectangle",
+                  "x": 0.29578675838349094,
+                  "y": 0.18292682926829268,
+                  "uniqueID": "id-25655",
+                  "ioValues": [
+                    {
+                      "name": "x length",
+                      "ioValue": 100
+                    },
+                    {
+                      "name": "y length",
+                      "ioValue": 100
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Extrude",
+                  "x": 0.39761904761904765,
+                  "y": 0.3259052924791086,
+                  "uniqueID": "id-25656",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "height",
+                      "ioValue": 100
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Rectangle",
+                  "x": 0.1840068787618229,
+                  "y": 0.771341463414634,
+                  "uniqueID": "id-25657",
+                  "ioValues": [
+                    {
+                      "name": "x length",
+                      "ioValue": 100
+                    },
+                    {
+                      "name": "y length",
+                      "ioValue": 300
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Extrude",
+                  "x": 0.3344797936371453,
+                  "y": 0.7926829268292683,
+                  "uniqueID": "id-25658",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "height",
+                      "ioValue": 150
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Move",
+                  "x": 0.4453998280309544,
+                  "y": 0.600609756097561,
+                  "uniqueID": "id-25659",
+                  "ioValues": [
+                    {
+                      "name": "geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "xDist",
+                      "ioValue": 21
+                    },
+                    {
+                      "name": "yDist",
+                      "ioValue": 20
+                    },
+                    {
+                      "name": "zDist",
+                      "ioValue": 0
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.021449999999999997,
+                  "y": 0.28600000000000003,
+                  "uniqueID": "id-25660",
+                  "name": "Bounding_Box",
+                  "type": "geometry"
+                },
+                {
+                  "atomType": "Code",
+                  "x": 0.6801375752364575,
+                  "y": 0.4085365853658537,
+                  "uniqueID": "id-25661",
+                  "ioValues": [
+                    {
+                      "name": "shape",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "radius",
+                      "ioValue": 1
+                    },
+                    {
+                      "name": "region",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ],
+                  "interpreterVersion": 1,
+                  "code": "/**\n * Fillets vertical (Z-direction) edges on geometry with optional region-based filtering.\n * If a region is provided, only fillets edges within that bounding box.\n */\nfunction run(\n  shape: Assembly,\n  radius: number = 2,\n  region?: Assembly\n) {\n  // ── Step 1: Determine edge filter based on region ──────────────────\n  let edgeFilter: (e: any) => any;\n  let inputShape = shape\n\n  if (region) {\n    try {\n      // Extract geometry from region (could be Assembly or direct 3D shape)\n      let regionGeo = region.geometry;\n\n      // If it's an array, get the first element\n      if (Array.isArray(regionGeo)) {\n        regionGeo = regionGeo[0];\n      }\n      console.log(regionGeo.boundingBox)\n      // Get bounding box from the 3D shape\n      const bounds = regionGeo.boundingBox.bounds\n      if (bounds) {\n        console.log(\"bounding in new\")\n        console.log(bounds)\n        edgeFilter = (e) => e.inDirection(\"Z\").inBox(bounds[0], bounds[1]);\n        console.log(edgeFilter)\n      } else {\n        edgeFilter = (e) => e.inDirection(\"Z\");\n      }\n    } catch (err) {\n      // Fallback if bounds extraction fails\n      edgeFilter = (e) => e.inDirection(\"Z\");\n    }\n  } else {\n    // No region: fillet only vertical (Z-direction) edges\n    edgeFilter = (e) => e.inDirection(\"Z\");\n  }\n\n  // ── Step 2: Apply fillet to selected edges ──────────────────────────────\n  // If no edge selector is provided, fillet all edges.\n  // Pass a selector like (e) => e.inPlane(\"XY\", z) to fillet only specific edges.\n  let filletedGeometry = inputShape.geometry;\n  if (edgeFilter) {\n    filletedGeometry = inputShape.geometry.fillet(radius, edgeFilter);\n  } else {\n    filletedGeometry = inputShape.geometry.fillet(radius);\n  }\n\n  // ── Step 3: Wrap in an Assembly preserving upstream properties ──────────\n  // Color, tags, and BOM info are inherited from the input shape.\n  const result: Assembly = new Assembly({\n    geometry: filletedGeometry,\n    color: inputShape.color,\n    tags: inputShape.tags,\n    plane: inputShape.plane,\n    bom: inputShape.bom,\n  });\n  return result;\n}",
+                  "compiledCode": "\"use strict\";\n/**\n * Fillets vertical (Z-direction) edges on geometry with optional region-based filtering.\n * If a region is provided, only fillets edges within that bounding box.\n */\nfunction run(shape, radius = 2, region) {\n    // ── Step 1: Determine edge filter based on region ──────────────────\n    let edgeFilter;\n    let inputShape = shape;\n    if (region) {\n        try {\n            // Extract geometry from region (could be Assembly or direct 3D shape)\n            let regionGeo = region.geometry;\n            // If it's an array, get the first element\n            if (Array.isArray(regionGeo)) {\n                regionGeo = regionGeo[0];\n            }\n            console.log(regionGeo.boundingBox);\n            // Get bounding box from the 3D shape\n            const bounds = regionGeo.boundingBox.bounds;\n            if (bounds) {\n                console.log(\"bounding in new\");\n                console.log(bounds);\n                edgeFilter = (e) => e.inDirection(\"Z\").inBox(bounds[0], bounds[1]);\n                console.log(edgeFilter);\n            }\n            else {\n                edgeFilter = (e) => e.inDirection(\"Z\");\n            }\n        }\n        catch (err) {\n            // Fallback if bounds extraction fails\n            edgeFilter = (e) => e.inDirection(\"Z\");\n        }\n    }\n    else {\n        // No region: fillet only vertical (Z-direction) edges\n        edgeFilter = (e) => e.inDirection(\"Z\");\n    }\n    // ── Step 2: Apply fillet to selected edges ──────────────────────────────\n    // If no edge selector is provided, fillet all edges.\n    // Pass a selector like (e) => e.inPlane(\"XY\", z) to fillet only specific edges.\n    let filletedGeometry = inputShape.geometry;\n    if (edgeFilter) {\n        filletedGeometry = inputShape.geometry.fillet(radius, edgeFilter);\n    }\n    else {\n        filletedGeometry = inputShape.geometry.fillet(radius);\n    }\n    // ── Step 3: Wrap in an Assembly preserving upstream properties ──────────\n    // Color, tags, and BOM info are inherited from the input shape.\n    const result = new Assembly({\n        geometry: filletedGeometry,\n        color: inputShape.color,\n        tags: inputShape.tags,\n        plane: inputShape.plane,\n        bom: inputShape.bom,\n    });\n    return result;\n}\n"
+                }
+              ],
+              "allConnectors": [
+                {
+                  "ap2Name": "shape",
+                  "ap1ID": "id-25653",
+                  "ap2ID": "id-25661"
+                },
+                {
+                  "ap2Name": "radius",
+                  "ap1ID": "id-25654",
+                  "ap2ID": "id-25661"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-25655",
+                  "ap2ID": "id-25656"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-25657",
+                  "ap2ID": "id-25658"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-25658",
+                  "ap2ID": "id-25659"
+                },
+                {
+                  "ap2Name": "region",
+                  "ap1ID": "id-25660",
+                  "ap2ID": "id-25661"
+                },
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-25661",
+                  "ap2ID": "id-25652"
+                }
+              ],
+              "parentRepo": {
+                "lastFoundGit": "2026-06-08T18:23:39.082Z",
+                "privateRepo": false,
+                "repoName": "Filet_Vertical_Edges",
+                "dateCreated": "2026-03-26T16:35:10Z",
+                "likes": 0,
+                "readMe": "https://raw.githubusercontent.com/alzatin/Filet_Vertical_Edges/master/README.md?sanitize=true",
+                "yyyy": 2026,
+                "topMoleculeID": "id-448",
+                "githubMoleculesUsed": [],
+                "html_url": "https://github.com/alzatin/Filet_Vertical_Edges",
+                "topics": [],
+                "parentRepo": "BarbourSmith/Filet_Vertical_Edges",
+                "forks": 0,
+                "dateModified": "739770",
+                "ranking": 0.3,
+                "searchField": "filet_vertical_edges alzatin fillets only the vertical edges of the input shape ",
+                "owner": "alzatin",
+                "description": "Fillets only the vertical edges of the input shape",
+                "contentURL": "https://raw.githubusercontent.com/alzatin/Filet_Vertical_Edges/master/project.abundance?sanitize=true",
+                "svgURL": "https://raw.githubusercontent.com/alzatin/Filet_Vertical_Edges/master/project.svg?sanitize=true",
+                "isLocal": false
+              },
+              "unitsKey": "MM",
+              "fileTypeVersion": 1,
+              "lastReloadedFromGithubAt": 1780962452590
             }
           ],
           "allConnectors": [
@@ -6189,14 +6499,39 @@
               "ap2ID": "id-25552"
             },
             {
-              "ap2Name": "Shape 1",
+              "ap2Name": "retain",
               "ap1ID": "id-25589",
-              "ap2ID": "id-25585"
+              "ap2ID": "id-25613"
             },
             {
               "ap2Name": "remove",
               "ap1ID": "id-25593",
               "ap2ID": "id-25589"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-25599",
+              "ap2ID": "id-25607"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-25603",
+              "ap2ID": "id-25599"
+            },
+            {
+              "ap2Name": "remove",
+              "ap1ID": "id-25607",
+              "ap2ID": "id-25613"
+            },
+            {
+              "ap2Name": "Shape",
+              "ap1ID": "id-25613",
+              "ap2ID": "id-25662"
+            },
+            {
+              "ap2Name": "Shape 1",
+              "ap1ID": "id-25662",
+              "ap2ID": "id-25585"
             }
           ],
           "fileTypeVersion": 1
