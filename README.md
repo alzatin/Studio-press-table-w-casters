@@ -11,7 +11,7 @@
 - **table_length** (number)
 - **Bottom_pl_height** (number)
 - **ply_thick** (number)
-- **ply_thin** (undefined)
+- **ply_thin** (number)
 
 
 
