@@ -7118,8 +7118,8 @@
                     },
                     {
                       "atomType": "Fusion",
-                      "x": 0.39022140221402213,
-                      "y": 0.2713414634146341,
+                      "x": 0.3539906103286385,
+                      "y": 0.2746268656716418,
                       "uniqueID": "id-13010",
                       "ioValues": [
                         {
@@ -7238,8 +7238,8 @@
                     },
                     {
                       "atomType": "Assembly",
-                      "x": 0.6120448179271708,
-                      "y": 0.4507462686567164,
+                      "x": 0.5530516431924882,
+                      "y": 0.40298507462686567,
                       "uniqueID": "id-13029",
                       "ioValues": [
                         {
@@ -7290,8 +7290,8 @@
                     },
                     {
                       "atomType": "Tag",
-                      "x": 0.5212177121771218,
-                      "y": 0.7225609756097561,
+                      "x": 0.5117370892018779,
+                      "y": 0.7044776119402986,
                       "uniqueID": "id-13144",
                       "name": "Rail_innie",
                       "ioValues": [
@@ -7321,8 +7321,8 @@
                     },
                     {
                       "atomType": "Intersection",
-                      "x": 0.7941176470588235,
-                      "y": 0.5850746268656717,
+                      "x": 0.7953051643192489,
+                      "y": 0.591044776119403,
                       "uniqueID": "id-14528",
                       "ioValues": [
                         {
@@ -7337,8 +7337,8 @@
                     },
                     {
                       "atomType": "Color",
-                      "x": 0.4861623616236162,
-                      "y": 0.5335365853658537,
+                      "x": 0.4638497652582159,
+                      "y": 0.5373134328358209,
                       "uniqueID": "id-17498",
                       "ioValues": [
                         {
@@ -7374,8 +7374,8 @@
                     },
                     {
                       "atomType": "Tag",
-                      "x": 0.46033210332103325,
-                      "y": 0.3780487804878049,
+                      "x": 0.4084507042253521,
+                      "y": 0.417910447761194,
                       "uniqueID": "id-19503",
                       "name": "Rail_outie",
                       "ioValues": [
@@ -7390,8 +7390,8 @@
                     },
                     {
                       "atomType": "ExtractTag",
-                      "x": 0.6116236162361623,
-                      "y": 0.2621951219512195,
+                      "x": 0.6845070422535212,
+                      "y": 0.7432835820895521,
                       "uniqueID": "id-19506",
                       "name": "Extract Rail_outie",
                       "ioValues": [
@@ -7405,8 +7405,8 @@
                     },
                     {
                       "atomType": "Intersection",
-                      "x": 0.7857142857142857,
-                      "y": 0.8805970149253731,
+                      "x": 0.7812206572769953,
+                      "y": 0.8955223880597015,
                       "uniqueID": "id-20509",
                       "ioValues": [
                         {
@@ -7421,8 +7421,8 @@
                     },
                     {
                       "atomType": "Move",
-                      "x": 0.6764705882352942,
-                      "y": 0.6328358208955224,
+                      "x": 0.5859154929577465,
+                      "y": 0.5761194029850747,
                       "uniqueID": "id-20513",
                       "ioValues": [
                         {
@@ -7431,7 +7431,8 @@
                         },
                         {
                           "name": "xDist",
-                          "ioValue": 0.5
+                          "ioValue": -0.5,
+                          "currentEquation": "-0.5"
                         },
                         {
                           "name": "yDist",
@@ -7445,8 +7446,8 @@
                     },
                     {
                       "atomType": "Export",
-                      "x": 0.8413284132841328,
-                      "y": 0.8262195121951219,
+                      "x": 0.844131455399061,
+                      "y": 0.8328358208955224,
                       "uniqueID": "id-20519",
                       "ioValues": [
                         {
@@ -7504,156 +7505,9 @@
                       "partName": "Drawer_rail_innie"
                     },
                     {
-                      "atomType": "GitHubMolecule",
-                      "x": 0.5359778597785978,
-                      "y": 0.21951219512195122,
-                      "uniqueID": "id-13108",
-                      "name": "Fillet-",
-                      "ioValues": [
-                        {
-                          "name": "Shape",
-                          "ioValue": "__GEOMETRY_INPUT__"
-                        },
-                        {
-                          "name": "Radius",
-                          "ioValue": 0.02
-                        }
-                      ],
-                      "topLevel": false,
-                      "allAtoms": [
-                        {
-                          "atomType": "Output",
-                          "x": 0.98,
-                          "y": 0.5,
-                          "uniqueID": "id-13102",
-                          "ioValues": [
-                            {
-                              "name": "number or geometry",
-                              "ioValue": "__GEOMETRY_INPUT__"
-                            }
-                          ]
-                        },
-                        {
-                          "atomType": "Input",
-                          "x": 0.021449999999999997,
-                          "y": 0.13,
-                          "uniqueID": "id-13103",
-                          "name": "Shape",
-                          "type": "geometry"
-                        },
-                        {
-                          "atomType": "Input",
-                          "x": 0.021449999999999997,
-                          "y": 0.20800000000000002,
-                          "uniqueID": "id-13104",
-                          "name": "Radius",
-                          "type": "number"
-                        },
-                        {
-                          "atomType": "Rectangle",
-                          "x": 0.07738095238095238,
-                          "y": 0.8495821727019498,
-                          "uniqueID": "id-13105",
-                          "ioValues": [
-                            {
-                              "name": "x length",
-                              "ioValue": 100
-                            },
-                            {
-                              "name": "y length",
-                              "ioValue": 100
-                            }
-                          ]
-                        },
-                        {
-                          "atomType": "Extrude",
-                          "x": 0.17539682539682538,
-                          "y": 0.8217270194986073,
-                          "uniqueID": "id-13106",
-                          "ioValues": [
-                            {
-                              "name": "geometry",
-                              "ioValue": "__GEOMETRY_INPUT__"
-                            },
-                            {
-                              "name": "height",
-                              "ioValue": 100
-                            }
-                          ]
-                        },
-                        {
-                          "atomType": "Code",
-                          "x": 0.4901639344262295,
-                          "y": 0.42378048780487804,
-                          "uniqueID": "id-13107",
-                          "ioValues": [
-                            {
-                              "name": "inputShape",
-                              "ioValue": "__GEOMETRY_INPUT__"
-                            },
-                            {
-                              "name": "radius",
-                              "ioValue": 0.02
-                            }
-                          ],
-                          "interpreterVersion": 1,
-                          "code": "/**\n * Rounds sharp edges on a 3D solid geometry using fillets.\n * A fillet smooths out edges by rounding them to a specified radius.\n * All parameters have defaults so the atom works immediately.\n */\nfunction run(\n  inputShape: Assembly,\n  radius: number = 1.5,\n  edgeSelector?: boolean\n): Assembly {\n  // ── Step 1: Validate input geometry ──────────────────────────────────────\n  // Fillets only work on 3D solids, not 2D sketches or wires.\n  if (!inputShape?.geometry?.fillet) {\n    throw new Error(\"Input must be a 3D solid geometry\");\n  }\n\n  // ── Step 2: Apply fillet to selected edges ──────────────────────────────\n  // If no edge selector is provided, fillet all edges.\n  // Pass a selector like (e) => e.inPlane(\"XY\", z) to fillet only specific edges.\n  let filletedGeometry = inputShape.geometry;\n \n    filletedGeometry = inputShape.geometry.fillet(radius);\n\n\n  // ── Step 3: Wrap in an Assembly preserving upstream properties ──────────\n  // Color, tags, and BOM info are inherited from the input shape.\n  const result: Assembly = new Assembly({\n    geometry: filletedGeometry,\n    color: inputShape.color,\n    tags: inputShape.tags,\n    plane: inputShape.plane,\n    bom: inputShape.bom,\n  });\n\n  return result;\n}",
-                          "compiledCode": "\"use strict\";\n/**\n * Rounds sharp edges on a 3D solid geometry using fillets.\n * A fillet smooths out edges by rounding them to a specified radius.\n * All parameters have defaults so the atom works immediately.\n */\nfunction run(inputShape, radius = 1.5, edgeSelector) {\n    // ── Step 1: Validate input geometry ──────────────────────────────────────\n    // Fillets only work on 3D solids, not 2D sketches or wires.\n    if (!inputShape?.geometry?.fillet) {\n        throw new Error(\"Input must be a 3D solid geometry\");\n    }\n    // ── Step 2: Apply fillet to selected edges ──────────────────────────────\n    // If no edge selector is provided, fillet all edges.\n    // Pass a selector like (e) => e.inPlane(\"XY\", z) to fillet only specific edges.\n    let filletedGeometry = inputShape.geometry;\n    filletedGeometry = inputShape.geometry.fillet(radius);\n    // ── Step 3: Wrap in an Assembly preserving upstream properties ──────────\n    // Color, tags, and BOM info are inherited from the input shape.\n    const result = new Assembly({\n        geometry: filletedGeometry,\n        color: inputShape.color,\n        tags: inputShape.tags,\n        plane: inputShape.plane,\n        bom: inputShape.bom,\n    });\n    return result;\n}\n"
-                        }
-                      ],
-                      "allConnectors": [
-                        {
-                          "ap2Name": "inputShape",
-                          "ap1ID": "id-13103",
-                          "ap2ID": "id-13107"
-                        },
-                        {
-                          "ap2Name": "radius",
-                          "ap1ID": "id-13104",
-                          "ap2ID": "id-13107"
-                        },
-                        {
-                          "ap2Name": "geometry",
-                          "ap1ID": "id-13105",
-                          "ap2ID": "id-13106"
-                        },
-                        {
-                          "ap2Name": "number or geometry",
-                          "ap1ID": "id-13107",
-                          "ap2ID": "id-13102"
-                        }
-                      ],
-                      "parentRepo": {
-                        "lastFoundGit": "2026-06-08T10:23:38.963Z",
-                        "privateRepo": false,
-                        "repoName": "Fillet-",
-                        "dateCreated": "2026-06-03T16:40:27Z",
-                        "likes": 0,
-                        "readMe": "https://raw.githubusercontent.com/alzatin/Fillet-/master/README.md?sanitize=true",
-                        "yyyy": 2026,
-                        "topMoleculeID": 1741842512908,
-                        "githubMoleculesUsed": [],
-                        "html_url": "https://github.com/alzatin/Fillet-",
-                        "topics": [],
-                        "parentRepo": "BarbourSmith/Fillet-",
-                        "forks": 0,
-                        "dateModified": "739770",
-                        "ranking": 0.6,
-                        "searchField": "fillet- alzatin fillets every edge of an input shape ",
-                        "owner": "alzatin",
-                        "description": "Fillets every edge of an input shape",
-                        "contentURL": "https://raw.githubusercontent.com/alzatin/Fillet-/master/project.abundance?sanitize=true",
-                        "svgURL": "https://raw.githubusercontent.com/alzatin/Fillet-/master/project.svg?sanitize=true",
-                        "isLocal": false
-                      },
-                      "unitsKey": "MM",
-                      "fileTypeVersion": 1,
-                      "lastReloadedFromGithubAt": 1780933123625
-                    },
-                    {
                       "atomType": "Molecule",
-                      "x": 0.4077490774907749,
-                      "y": 0.4908536585365854,
+                      "x": 0.3502347417840376,
+                      "y": 0.5582089552238806,
                       "uniqueID": "id-13242",
                       "name": "holes",
                       "topLevel": false,
@@ -9122,9 +8976,9 @@
                       "ap2ID": "id-13029"
                     },
                     {
-                      "ap2Name": "Shape",
-                      "ap1ID": "id-19503",
-                      "ap2ID": "id-13108"
+                      "ap2Name": "geometry1",
+                      "ap1ID": "id-19506",
+                      "ap2ID": "id-20509"
                     },
                     {
                       "ap2Name": "geometry",
@@ -9132,13 +8986,8 @@
                       "ap2ID": "id-20519"
                     },
                     {
-                      "ap2Name": "geometry1",
-                      "ap1ID": "id-20513",
-                      "ap2ID": "id-20509"
-                    },
-                    {
                       "ap2Name": "geometry",
-                      "ap1ID": "id-13108",
+                      "ap1ID": "id-20513",
                       "ap2ID": "id-19506"
                     },
                     {
