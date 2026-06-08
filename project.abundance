@@ -4488,8 +4488,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.41036414565826335,
-      "y": 0.835820895522388,
+      "x": 0.41526610644257705,
+      "y": 0.8537313432835821,
       "uniqueID": "id-10075",
       "name": "Interior",
       "ioValues": [
@@ -4562,8 +4562,8 @@
         },
         {
           "atomType": "Rotate",
-          "x": 0.49355116079105765,
-          "y": 0.38414634146341464,
+          "x": 0.49299719887955185,
+          "y": 0.38805970149253727,
           "uniqueID": "id-10093",
           "ioValues": [
             {
@@ -4586,8 +4586,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.6799719887955182,
-          "y": 0.21194029850746268,
+          "x": 0.6785714285714286,
+          "y": 0.208955223880597,
           "uniqueID": "id-10099",
           "ioValues": [
             {
@@ -4612,8 +4612,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.6281512605042017,
-          "y": 0.4537313432835821,
+          "x": 0.6316526610644257,
+          "y": 0.4686567164179104,
           "uniqueID": "id-11363",
           "ioValues": [
             {
@@ -4626,8 +4626,8 @@
             },
             {
               "name": "yDist",
-              "ioValue": 16.5,
-              "currentEquation": "table_width/4 - ply_thick*2"
+              "ioValue": 17.25,
+              "currentEquation": "table_width/4 - ply_thick"
             },
             {
               "name": "zDist",
@@ -4638,8 +4638,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.8168529664660361,
-          "y": 0.5182926829268293,
+          "x": 0.8123249299719889,
+          "y": 0.5014925373134328,
           "uniqueID": "id-11369",
           "ioValues": [
             {
@@ -4687,8 +4687,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.30073800738007384,
-          "y": 0.8475609756097561,
+          "x": 0.2913165266106443,
+          "y": 0.826865671641791,
           "uniqueID": "id-21534",
           "name": "Side_panels",
           "topLevel": false,
@@ -4713,7 +4713,8 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 25
+                  "ioValue": 24,
+                  "currentEquation": "interior_height"
                 },
                 {
                   "name": "y length",
@@ -4723,8 +4724,8 @@
             },
             {
               "atomType": "Extrude",
-              "x": 0.4225092250922509,
-              "y": 0.5335365853658537,
+              "x": 0.42016806722689076,
+              "y": 0.5253731343283582,
               "uniqueID": "id-21542",
               "ioValues": [
                 {
@@ -4764,8 +4765,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.6245387453874538,
-              "y": 0.33536585365853655,
+              "x": 0.6162464985994397,
+              "y": 0.34626865671641793,
               "uniqueID": "id-21552",
               "ioValues": [
                 {
@@ -4774,24 +4775,25 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": 11.5,
-                  "currentEquation": "table_length/2 - 6 - ply_thin"
+                  "ioValue": 12.25,
+                  "currentEquation": "table_length/2 - 6 + ply_thin/2"
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 26
+                  "ioValue": 25.75,
+                  "currentEquation": "25.75"
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 17,
-                  "currentEquation": "(Leg_height ) / 2 + 2"
+                  "ioValue": 16,
+                  "currentEquation": "interior_height/2 + 4"
                 }
               ]
             },
             {
               "atomType": "Move",
-              "x": 0.6457564575645757,
-              "y": 0.6219512195121951,
+              "x": 0.6638655462184874,
+              "y": 0.6388059701492538,
               "uniqueID": "id-21558",
               "ioValues": [
                 {
@@ -4805,12 +4807,13 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 26
+                  "ioValue": 25.75,
+                  "currentEquation": "25.75"
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 17,
-                  "currentEquation": "(Leg_height ) / 2 + 2"
+                  "ioValue": 16,
+                  "currentEquation": "interior_height/2 + 4"
                 }
               ]
             },
