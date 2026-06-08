@@ -2174,8 +2174,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.3628546861564918,
-      "y": 0.8231707317073171,
+      "x": 0.411865864144454,
+      "y": 0.6219512195121951,
       "uniqueID": "id-10075",
       "name": "Sidepanel-1",
       "ioValues": [
@@ -4835,6 +4835,279 @@
           "ap2Name": "geometry",
           "ap1ID": "id-5728",
           "ap2ID": "id-5713"
+        }
+      ],
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.2656921754084265,
+      "y": 0.9207317073170732,
+      "uniqueID": "id-12145",
+      "name": "Casters",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-12147",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Import",
+          "x": 0.2579535683576956,
+          "y": 0.3597560975609756,
+          "uniqueID": "id-12149",
+          "fileName": "2426T65_Cardinal Caster.STEP",
+          "name": "Import",
+          "type": "STEP",
+          "repoOwner": "alzatin",
+          "repoName": "Studio-press-table-w-casters",
+          "SVGwidth": 10
+        },
+        {
+          "atomType": "Rotate",
+          "x": 0.41100601891659505,
+          "y": 0.3597560975609756,
+          "uniqueID": "id-12151",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "x-axis degrees",
+              "ioValue": 90,
+              "currentEquation": "90"
+            },
+            {
+              "name": "y-axis degrees",
+              "ioValue": 0,
+              "currentEquation": "0"
+            },
+            {
+              "name": "z-axis degrees",
+              "ioValue": 90,
+              "currentEquation": "90"
+            }
+          ]
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.5417024935511607,
+          "y": 0.38109756097560976,
+          "uniqueID": "id-12166",
+          "name": "Scale",
+          "ioValues": [
+            {
+              "name": "Scale Factor",
+              "ioValue": 0.03937007874015748,
+              "currentEquation": "0.03937007874015748"
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-12162",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-12163",
+              "name": "Geometry",
+              "type": "number"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.24615384615384617,
+              "uniqueID": "id-12164",
+              "name": "Scale Factor",
+              "type": "number"
+            },
+            {
+              "atomType": "Code",
+              "x": 0.4226190476190476,
+              "y": 0.25139664804469275,
+              "uniqueID": "id-12165",
+              "ioValues": [
+                {
+                  "name": "inputShape",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "scaleFactor",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "interpreterVersion": 0,
+              "code": " \n      //Inputs:[inputShape, scaleFactor]\n      //This defines the molecules inputs and creates variables with the same names which can be referenced in the code\n      \n      //Takes the address and gets the shape from the library\n      let importedShape = library[inputShape]\n\n      let scaledShape = await Scale(inputShape, scaleFactor);\n      \n      \n      //Shapes stored in the library have tags, a color, a plane, and a bill of materials like this. We don't modify them here\n      let shape1 = {\n        geometry: [scaledShape],\n        tags: importedShape.tags,\n        color: importedShape.color,\n        plane: importedShape.plane,\n        bom: importedShape.bom\n      }\n      \n      return shape1\n      \n      \n      \n          /**\n          To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n          If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n          Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n          https://replicad.xyz/docs/introapp/UserGuide.html \n          Return a replicad object that includes geometry, color, tags and plane. \n      \n      \n          Example Code Atom:\n      \n            Inputs:[shape, x];\n      \n            let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n      \n            return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n      \n            - See more examples at _______ \n      \n      \n          */\n      "
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "inputShape",
+              "ap1ID": "id-12163",
+              "ap2ID": "id-12165"
+            },
+            {
+              "ap2Name": "scaleFactor",
+              "ap1ID": "id-12164",
+              "ap2ID": "id-12165"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-12165",
+              "ap2ID": "id-12162"
+            }
+          ],
+          "parentRepo": {
+            "lastFoundGit": "2026-06-08T10:23:38.963Z",
+            "privateRepo": false,
+            "repoName": "Scale",
+            "dateCreated": "2025-06-26T17:06:11Z",
+            "likes": 0,
+            "readMe": "https://raw.githubusercontent.com/BarbourSmith/Scale/master/README.md?sanitize=true",
+            "yyyy": 2025,
+            "topMoleculeID": "4b6bc40a-44a9-438a-9ed9-ba4910815d8d",
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/BarbourSmith/Scale",
+            "topics": [],
+            "parentRepo": null,
+            "forks": 1,
+            "dateModified": "739428",
+            "ranking": 4.1,
+            "searchField": "scale barboursmith scales the input 2d or 3d geometry by the scale factor ",
+            "owner": "BarbourSmith",
+            "description": "Scales the input 2D or 3D geometry by the scale factor",
+            "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Scale/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Scale/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "Unitless",
+          "fileTypeVersion": 1,
+          "lastReloadedFromGithubAt": 1780931657744
+        },
+        {
+          "atomType": "Move",
+          "x": 0.7678417884780739,
+          "y": 0.4451219512195122,
+          "uniqueID": "id-12178",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0,
+              "currentEquation": "table_depth"
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Add-BOM-Tag",
+          "x": 0.5597592433361995,
+          "y": 0.7347560975609756,
+          "uniqueID": "id-12184",
+          "name": "Add BOM Tag",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Item Name",
+              "ioValue": "Caster 3\"",
+              "currentEquation": "Caster 3\""
+            },
+            {
+              "name": "Number Needed",
+              "ioValue": 1
+            },
+            {
+              "name": "Cost (USD)",
+              "ioValue": 0
+            },
+            {
+              "name": "Source Link",
+              "ioValue": "https://www.mcmaster.com/products/casters/brake-lock-type~wheel-brake-and-swivel-lock-total-lock/weight-capacity-per-caster~less-than~1000~lb/wheel-diameter~3/",
+              "currentEquation": "https://www.mcmaster.com/products/casters/brake-lock-type~wheel-brake-and-swivel-lock-total-lock/weight-capacity-per-caster~less-than~1000~lb/wheel-diameter~3/"
+            }
+          ],
+          "BOMitem": {
+            "BOMitemName": "Caster 3\"",
+            "numberNeeded": 1,
+            "costUSD": 0,
+            "source": "https://www.mcmaster.com/products/casters/brake-lock-type~wheel-brake-and-swivel-lock-total-lock/weight-capacity-per-caster~less-than~1000~lb/wheel-diameter~3/"
+          }
+        },
+        {
+          "atomType": "Tag",
+          "x": 0.6371453138435081,
+          "y": 0.573170731707317,
+          "uniqueID": "id-12191",
+          "name": "Caster",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "tags": [
+            "Caster"
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-12149",
+          "ap2ID": "id-12151"
+        },
+        {
+          "ap2Name": "Geometry",
+          "ap1ID": "id-12151",
+          "ap2ID": "id-12166"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-12166",
+          "ap2ID": "id-12184"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-12184",
+          "ap2ID": "id-12191"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-12191",
+          "ap2ID": "id-12178"
         }
       ],
       "fileTypeVersion": 1
