@@ -831,8 +831,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.7764402407566637,
-          "y": 0.2103658536585366,
+          "x": 0.7136715391229579,
+          "y": 0.23475609756097562,
           "uniqueID": "id-5890",
           "ioValues": [
             {
@@ -1009,8 +1009,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.8555460017196904,
-          "y": 0.5518292682926829,
+          "x": 0.8495270851246776,
+          "y": 0.5579268292682927,
           "uniqueID": "id-5980",
           "ioValues": [
             {
@@ -1101,6 +1101,30 @@
               }
             ]
           ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.7515047291487532,
+          "y": 0.4420731707317073,
+          "uniqueID": "id-15513",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 1
+            }
+          ]
         }
       ],
       "allConnectors": [
@@ -1143,6 +1167,11 @@
           "ap2Name": "Shape 3",
           "ap1ID": "id-5890",
           "ap2ID": "id-5980"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-5890",
+          "ap2ID": "id-15513"
         },
         {
           "ap2Name": "x",
