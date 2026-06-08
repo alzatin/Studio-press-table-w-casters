@@ -7805,24 +7805,48 @@
               ]
             },
             {
-              "atomType": "Rectangle",
-              "x": 0.17787114845938376,
-              "y": 0.43582089552238806,
-              "uniqueID": "id-22706",
+              "atomType": "RegularPolygon",
+              "x": 0.1764705882352941,
+              "y": 0.4328358208955224,
+              "uniqueID": "id-22710",
               "ioValues": [
                 {
-                  "name": "x length",
-                  "ioValue": 6
-                },
-                {
-                  "name": "y length",
+                  "name": "number of sides",
                   "ioValue": 6,
                   "currentEquation": "6"
+                },
+                {
+                  "name": "diameter",
+                  "ioValue": 2.5,
+                  "currentEquation": "2.5"
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.27661064425770304,
+              "y": 0.3970149253731343,
+              "uniqueID": "id-22714",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 3,
+                  "currentEquation": "3"
                 }
               ]
             }
           ],
-          "allConnectors": [],
+          "allConnectors": [
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-22710",
+              "ap2ID": "id-22714"
+            }
+          ],
           "fileTypeVersion": 1
         }
       ],
