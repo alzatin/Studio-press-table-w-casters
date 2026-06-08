@@ -2336,8 +2336,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.37747205503009457,
-          "y": 0.7103658536585366,
+          "x": 0.3654342218400688,
+          "y": 0.771341463414634,
           "uniqueID": "id-11992",
           "name": "Drawers",
           "ioValues": [
@@ -2834,13 +2834,17 @@
                 {
                   "name": "Shape 1",
                   "ioValue": null
+                },
+                {
+                  "name": "Shape 2",
+                  "ioValue": null
                 }
               ]
             },
             {
               "atomType": "Move",
-              "x": 0.5116079105760963,
-              "y": 0.7317073170731707,
+              "x": 0.5124677558039553,
+              "y": 0.7439024390243902,
               "uniqueID": "id-12138",
               "ioValues": [
                 {
@@ -2857,7 +2861,8 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 0
+                  "ioValue": 5,
+                  "currentEquation": "5"
                 }
               ]
             }
@@ -2882,14 +2887,19 @@
               "ap2Name": "number or geometry",
               "ap1ID": "id-12117",
               "ap2ID": "id-11994"
+            },
+            {
+              "ap2Name": "Shape 2",
+              "ap1ID": "id-12138",
+              "ap2ID": "id-12117"
             }
           ],
           "fileTypeVersion": 1
         },
         {
           "atomType": "Move",
-          "x": 0.5098882201203784,
-          "y": 0.75,
+          "x": 0.5116079105760963,
+          "y": 0.698170731707317,
           "uniqueID": "id-12131",
           "ioValues": [
             {
