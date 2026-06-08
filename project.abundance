@@ -5812,6 +5812,51 @@
                   "currentEquation": "3"
                 }
               ]
+            },
+            {
+              "atomType": "ExtractTag",
+              "x": 0.8629107981220656,
+              "y": 0.8119402985074626,
+              "uniqueID": "id-25459",
+              "name": "Extract Drill_holder",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "tag": "Drill_holder",
+              "tagIndex": 0
+            },
+            {
+              "atomType": "Export",
+              "x": 0.8732394366197183,
+              "y": 0.9313432835820896,
+              "uniqueID": "id-25462",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "File Type",
+                  "ioValue": "STL",
+                  "currentEquation": "STL"
+                },
+                {
+                  "name": "Resolution (dpi)",
+                  "ioValue": 96
+                },
+                {
+                  "name": "Part Name",
+                  "ioValue": "Drill_holder",
+                  "currentEquation": "Drill_holder"
+                }
+              ],
+              "type": null,
+              "resolution": 96,
+              "importIndex": 0,
+              "partName": "Drill_holder"
             }
           ],
           "allConnectors": [
@@ -5932,6 +5977,11 @@
             },
             {
               "ap2Name": "geometry",
+              "ap1ID": "id-25385",
+              "ap2ID": "id-25459"
+            },
+            {
+              "ap2Name": "geometry",
               "ap1ID": "id-25404",
               "ap2ID": "id-25439"
             },
@@ -5954,6 +6004,11 @@
               "ap2Name": "Shape 3",
               "ap1ID": "id-25452",
               "ap2ID": "id-25385"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-25459",
+              "ap2ID": "id-25462"
             }
           ],
           "fileTypeVersion": 1
@@ -6093,8 +6148,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.6316526610644257,
-          "y": 0.4686567164179104,
+          "x": 0.6347417840375587,
+          "y": 0.47164179104477605,
           "uniqueID": "id-11363",
           "ioValues": [
             {
@@ -6435,8 +6490,8 @@
             },
             {
               "atomType": "Molecule",
-              "x": 0.43265682656826565,
-              "y": 0.35670731707317077,
+              "x": 0.4309859154929577,
+              "y": 0.35820895522388063,
               "uniqueID": "id-11999",
               "name": "Drawer",
               "ioValues": [
