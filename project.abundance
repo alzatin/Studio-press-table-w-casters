@@ -4488,8 +4488,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.399859943977591,
-      "y": 0.9194029850746269,
+      "x": 0.4028169014084507,
+      "y": 0.9253731343283582,
       "uniqueID": "id-22695",
       "name": "tool_holders",
       "ioValues": [
@@ -4522,8 +4522,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.23739495798319327,
-          "y": 0.591044776119403,
+          "x": 0.2347417840375587,
+          "y": 0.6059701492537313,
           "uniqueID": "id-22702",
           "name": "Drill_holder",
           "topLevel": false,
@@ -4846,262 +4846,11 @@
               ]
             },
             {
-              "atomType": "GitHubMolecule",
-              "x": 0.4586834733893557,
-              "y": 0.8955223880597015,
-              "uniqueID": "id-24000",
-              "name": "Isosceles_Trapezoid",
-              "ioValues": [
-                {
-                  "name": "Base1",
-                  "ioValue": 4,
-                  "currentEquation": "4"
-                },
-                {
-                  "name": "Base2",
-                  "ioValue": 2,
-                  "currentEquation": "2"
-                },
-                {
-                  "name": "Trap_Height",
-                  "ioValue": 2
-                },
-                {
-                  "name": "Extrude_height",
-                  "ioValue": 4,
-                  "currentEquation": "4"
-                },
-                {
-                  "name": "Fillet",
-                  "ioValue": 0
-                }
-              ],
-              "topLevel": false,
-              "allAtoms": [
-                {
-                  "atomType": "Output",
-                  "x": 0.98,
-                  "y": 0.5,
-                  "uniqueID": "id-23992",
-                  "ioValues": [
-                    {
-                      "name": "number or geometry",
-                      "ioValue": "__GEOMETRY_INPUT__"
-                    }
-                  ]
-                },
-                {
-                  "atomType": "Code",
-                  "x": 0.32584269662921345,
-                  "y": 0.3940298507462686,
-                  "uniqueID": "id-23993",
-                  "ioValues": [
-                    {
-                      "name": "base1",
-                      "ioValue": 4
-                    },
-                    {
-                      "name": "base2",
-                      "ioValue": 2
-                    },
-                    {
-                      "name": "tr_height",
-                      "ioValue": 2
-                    },
-                    {
-                      "name": "height",
-                      "ioValue": 4
-                    },
-                    {
-                      "name": "fillet",
-                      "ioValue": 0
-                    }
-                  ],
-                  "interpreterVersion": 0,
-                  "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"base1\", type: \"number\", defaultValue: 40 },\n  { inputName: \"base2\", type: \"number\", defaultValue: 25 },\n  { inputName: \"tr_height\", type: \"number\", defaultValue: 25 },\n  { inputName: \"height\", type: \"number\", defaultValue: 10 },\n  { inputName: \"fillet\", type: \"number\", defaultValue: 0 }\n  \n];\n\n\n\nconst dx = (base1 - base2) / 2;\n\nconst trapezoid = replicad.draw().lineTo([base1, 0])                 // bottom right\n  .lineTo([base1 - dx, tr_height])       // top right\n  .lineTo([dx, tr_height])               // top left\n  .close()   \nlet newPlane = replicad.makePlane()\n\nlet sketchCir = trapezoid.sketchOnPlane(newPlane)\nlet cyl = sketchCir.extrude(height)\nlet cylObj = {\n  geometry: [cyl],\n  dimension: \"3D\",\n  tags: [\"createdCylinder\"],\n  color: \"#A3CE5B\",\n  plane: null,\n  bom: []\n};\nreturn cylObj"
-                },
-                {
-                  "atomType": "Code",
-                  "x": 0.6198501872659177,
-                  "y": 0.4567164179104477,
-                  "uniqueID": "id-23994",
-                  "ioValues": [
-                    {
-                      "name": "shape",
-                      "ioValue": "__GEOMETRY_INPUT__"
-                    },
-                    {
-                      "name": "fillet",
-                      "ioValue": 0
-                    }
-                  ],
-                  "interpreterVersion": 0,
-                  "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"fillet\", type: \"number\", defaultValue: 1 },\n];\n\nlet importedShape = library[shape]\nlet newPlane = replicad.makePlane()\n\nif (fillet > 0){\n  \nlet filletedCyl = importedShape.geometry[0].fillet(fillet, (e) => e.inDirection([0, 0, 1]));\n return {\n  geometry: [filletedCyl],\n  dimension: \"3D\",\n  tags: [\"createdShape\"],\n  color: '#A3CE5B',\n  plane: newPlane,\n  bom: [],\n}\n}\nelse{\n  return {\n  geometry: [importedShape],\n  dimension: \"3D\",\n  tags: [\"createdShape\"],\n  color: '#A3CE5B',\n  plane: newPlane,\n  bom: [],\n}\n  \n}\n"
-                },
-                {
-                  "atomType": "Input",
-                  "x": 0.021449999999999997,
-                  "y": 0.13,
-                  "uniqueID": "id-23995",
-                  "name": "Base1"
-                },
-                {
-                  "atomType": "Input",
-                  "x": 0.021449999999999997,
-                  "y": 0.20800000000000002,
-                  "uniqueID": "id-23996",
-                  "name": "Base2"
-                },
-                {
-                  "atomType": "Input",
-                  "x": 0.021449999999999997,
-                  "y": 0.28600000000000003,
-                  "uniqueID": "id-23997",
-                  "name": "Trap_Height"
-                },
-                {
-                  "atomType": "Input",
-                  "x": 0.021449999999999997,
-                  "y": 0.36400000000000005,
-                  "uniqueID": "id-23998",
-                  "name": "Extrude_height"
-                },
-                {
-                  "atomType": "Input",
-                  "x": 0.021449999999999997,
-                  "y": 0.44200000000000006,
-                  "uniqueID": "id-23999",
-                  "name": "Fillet"
-                }
-              ],
-              "allConnectors": [
-                {
-                  "ap2Name": "shape",
-                  "ap1ID": "id-23993",
-                  "ap2ID": "id-23994"
-                },
-                {
-                  "ap2Name": "number or geometry",
-                  "ap1ID": "id-23994",
-                  "ap2ID": "id-23992"
-                },
-                {
-                  "ap2Name": "base1",
-                  "ap1ID": "id-23995",
-                  "ap2ID": "id-23993"
-                },
-                {
-                  "ap2Name": "base2",
-                  "ap1ID": "id-23996",
-                  "ap2ID": "id-23993"
-                },
-                {
-                  "ap2Name": "tr_height",
-                  "ap1ID": "id-23997",
-                  "ap2ID": "id-23993"
-                },
-                {
-                  "ap2Name": "height",
-                  "ap1ID": "id-23998",
-                  "ap2ID": "id-23993"
-                },
-                {
-                  "ap2Name": "fillet",
-                  "ap1ID": "id-23999",
-                  "ap2ID": "id-23994"
-                }
-              ],
-              "parentRepo": {
-                "lastFoundGit": "2026-06-08T18:23:39.082Z",
-                "privateRepo": false,
-                "repoName": "Isosceles_Trapezoid",
-                "dateCreated": "2026-02-19T14:16:21Z",
-                "likes": 0,
-                "readMe": "https://raw.githubusercontent.com/alzatin/Isosceles_Trapezoid/master/README.md?sanitize=true",
-                "yyyy": 2026,
-                "topMoleculeID": "id-1",
-                "githubMoleculesUsed": [],
-                "html_url": "https://github.com/alzatin/Isosceles_Trapezoid",
-                "topics": [
-                  "abundance-tool"
-                ],
-                "parentRepo": null,
-                "forks": 0,
-                "dateModified": "739666",
-                "ranking": 1.2,
-                "searchField": "isosceles_trapezoid alzatin defines a trapeze abundance-tool",
-                "owner": "alzatin",
-                "description": "Defines a trapeze",
-                "contentURL": "https://raw.githubusercontent.com/alzatin/Isosceles_Trapezoid/master/project.abundance?sanitize=true",
-                "svgURL": "https://raw.githubusercontent.com/alzatin/Isosceles_Trapezoid/master/project.svg?sanitize=true",
-                "isLocal": false
-              },
-              "unitsKey": "Unitless",
-              "fileTypeVersion": 1,
-              "lastReloadedFromGithubAt": 1780959135662
-            },
-            {
               "atomType": "Fusion",
               "x": 0.6442577030812325,
               "y": 0.7432835820895521,
               "uniqueID": "id-24024",
               "ioValues": [
-                {
-                  "name": "Shape 1",
-                  "ioValue": {
-                    "geometry": [
-                      {
-                        "geometry": "03889208-{\"geometry\":\"6792a800-4-2-2-4-0-0\",\"dimension\":\"3D\",\"tags\":[\"createdCylinder\"],\"color\":\"#A3CE5B\",\"plane\":{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]},\"bom\":[]}-0-0",
-                        "dimension": "3D",
-                        "tags": [
-                          "createdCylinder"
-                        ],
-                        "color": "#A3CE5B",
-                        "plane": {
-                          "origin": [
-                            0,
-                            0,
-                            0
-                          ],
-                          "xDir": [
-                            1,
-                            0,
-                            0
-                          ],
-                          "normal": [
-                            0,
-                            0,
-                            1
-                          ]
-                        },
-                        "bom": []
-                      }
-                    ],
-                    "dimension": "3D",
-                    "tags": [
-                      "createdShape"
-                    ],
-                    "color": "#A3CE5B",
-                    "plane": {
-                      "origin": [
-                        0,
-                        0,
-                        0
-                      ],
-                      "xDir": [
-                        1,
-                        0,
-                        0
-                      ],
-                      "normal": [
-                        0,
-                        0,
-                        1
-                      ]
-                    },
-                    "bom": []
-                  }
-                },
                 {
                   "name": "Shape 2",
                   "ioValue": {
@@ -5309,6 +5058,198 @@
                   "currentEquation": "0"
                 }
               ]
+            },
+            {
+              "atomType": "GitHubMolecule",
+              "x": 0.4694835680751174,
+              "y": 0.8626865671641791,
+              "uniqueID": "id-24145",
+              "name": "Isosceles_Trapezoid",
+              "ioValues": [
+                {
+                  "name": "Base1",
+                  "ioValue": 20
+                },
+                {
+                  "name": "Base2",
+                  "ioValue": 10
+                },
+                {
+                  "name": "Trap_Height",
+                  "ioValue": 10
+                },
+                {
+                  "name": "Extrude_height",
+                  "ioValue": 5
+                },
+                {
+                  "name": "Fillet",
+                  "ioValue": 0
+                }
+              ],
+              "topLevel": false,
+              "allAtoms": [
+                {
+                  "atomType": "Output",
+                  "x": 0.98,
+                  "y": 0.5,
+                  "uniqueID": "id-24137",
+                  "ioValues": [
+                    {
+                      "name": "number or geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Code",
+                  "x": 0.32584269662921345,
+                  "y": 0.3940298507462686,
+                  "uniqueID": "id-24138",
+                  "ioValues": [
+                    {
+                      "name": "base1",
+                      "ioValue": 20
+                    },
+                    {
+                      "name": "base2",
+                      "ioValue": 10
+                    },
+                    {
+                      "name": "tr_height",
+                      "ioValue": 10
+                    },
+                    {
+                      "name": "height",
+                      "ioValue": 5
+                    },
+                    {
+                      "name": "fillet",
+                      "ioValue": 0
+                    }
+                  ],
+                  "interpreterVersion": 0,
+                  "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"base1\", type: \"number\", defaultValue: 40 },\n  { inputName: \"base2\", type: \"number\", defaultValue: 25 },\n  { inputName: \"tr_height\", type: \"number\", defaultValue: 25 },\n  { inputName: \"height\", type: \"number\", defaultValue: 10 },\n  { inputName: \"fillet\", type: \"number\", defaultValue: 0 }\n  \n];\n\n\n\nconst dx = (base1 - base2) / 2;\n\nconst trapezoid = replicad.draw().lineTo([base1, 0])                 // bottom right\n  .lineTo([base1 - dx, tr_height])       // top right\n  .lineTo([dx, tr_height])               // top left\n  .close()   \nlet newPlane = replicad.makePlane()\n\nlet sketchCir = trapezoid.sketchOnPlane(newPlane)\nlet cyl = sketchCir.extrude(height)\nlet cylObj = {\n  geometry: [cyl],\n  dimension: \"3D\",\n  tags: [\"createdCylinder\"],\n  color: \"#A3CE5B\",\n  plane: null,\n  bom: []\n};\nreturn cylObj"
+                },
+                {
+                  "atomType": "Code",
+                  "x": 0.6198501872659177,
+                  "y": 0.4567164179104477,
+                  "uniqueID": "id-24139",
+                  "ioValues": [
+                    {
+                      "name": "shape",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    },
+                    {
+                      "name": "fillet",
+                      "ioValue": 0
+                    }
+                  ],
+                  "interpreterVersion": 0,
+                  "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"fillet\", type: \"number\", defaultValue: 1 },\n];\n\nlet importedShape = library[shape]\nlet newPlane = replicad.makePlane()\n\nif (fillet > 0){\n  \nlet filletedCyl = importedShape.geometry[0].fillet(fillet, (e) => e.inDirection([0, 0, 1]));\n return {\n  geometry: [filletedCyl],\n  dimension: \"3D\",\n  tags: [\"createdShape\"],\n  color: '#A3CE5B',\n  plane: newPlane,\n  bom: [],\n}\n}\nelse{\n  return {\n  geometry: [importedShape],\n  dimension: \"3D\",\n  tags: [\"createdShape\"],\n  color: '#A3CE5B',\n  plane: newPlane,\n  bom: [],\n}\n  \n}\n"
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.021449999999999997,
+                  "y": 0.13,
+                  "uniqueID": "id-24140",
+                  "name": "Base1"
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.021449999999999997,
+                  "y": 0.20800000000000002,
+                  "uniqueID": "id-24141",
+                  "name": "Base2"
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.021449999999999997,
+                  "y": 0.28600000000000003,
+                  "uniqueID": "id-24142",
+                  "name": "Trap_Height"
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.021449999999999997,
+                  "y": 0.36400000000000005,
+                  "uniqueID": "id-24143",
+                  "name": "Extrude_height"
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.021449999999999997,
+                  "y": 0.44200000000000006,
+                  "uniqueID": "id-24144",
+                  "name": "Fillet"
+                }
+              ],
+              "allConnectors": [
+                {
+                  "ap2Name": "shape",
+                  "ap1ID": "id-24138",
+                  "ap2ID": "id-24139"
+                },
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-24139",
+                  "ap2ID": "id-24137"
+                },
+                {
+                  "ap2Name": "base1",
+                  "ap1ID": "id-24140",
+                  "ap2ID": "id-24138"
+                },
+                {
+                  "ap2Name": "base2",
+                  "ap1ID": "id-24141",
+                  "ap2ID": "id-24138"
+                },
+                {
+                  "ap2Name": "tr_height",
+                  "ap1ID": "id-24142",
+                  "ap2ID": "id-24138"
+                },
+                {
+                  "ap2Name": "height",
+                  "ap1ID": "id-24143",
+                  "ap2ID": "id-24138"
+                },
+                {
+                  "ap2Name": "fillet",
+                  "ap1ID": "id-24144",
+                  "ap2ID": "id-24139"
+                }
+              ],
+              "parentRepo": {
+                "lastFoundGit": "2026-06-08T18:23:39.082Z",
+                "privateRepo": false,
+                "repoName": "Isosceles_Trapezoid",
+                "dateCreated": "2026-02-19T14:16:21Z",
+                "likes": 0,
+                "readMe": "https://raw.githubusercontent.com/alzatin/Isosceles_Trapezoid/master/README.md?sanitize=true",
+                "yyyy": 2026,
+                "topMoleculeID": "id-1",
+                "githubMoleculesUsed": [],
+                "html_url": "https://github.com/alzatin/Isosceles_Trapezoid",
+                "topics": [
+                  "abundance-tool"
+                ],
+                "parentRepo": null,
+                "forks": 0,
+                "dateModified": "739666",
+                "ranking": 1.2,
+                "searchField": "isosceles_trapezoid alzatin defines a trapeze abundance-tool",
+                "owner": "alzatin",
+                "description": "Defines a trapeze",
+                "contentURL": "https://raw.githubusercontent.com/alzatin/Isosceles_Trapezoid/master/project.abundance?sanitize=true",
+                "svgURL": "https://raw.githubusercontent.com/alzatin/Isosceles_Trapezoid/master/project.svg?sanitize=true",
+                "isLocal": false
+              },
+              "unitsKey": "Unitless",
+              "fileTypeVersion": 1,
+              "lastReloadedFromGithubAt": 1780959605952
             }
           ],
           "allConnectors": [
@@ -5351,11 +5292,6 @@
               "ap2Name": "retain",
               "ap1ID": "id-23965",
               "ap2ID": "id-23823"
-            },
-            {
-              "ap2Name": "Shape 1",
-              "ap1ID": "id-24000",
-              "ap2ID": "id-24024"
             },
             {
               "ap2Name": "number or geometry",
