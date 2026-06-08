@@ -91,8 +91,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.6620808254514188,
-      "y": 0.6676829268292683,
+      "x": 0.6603611349957007,
+      "y": 0.6798780487804877,
       "uniqueID": "id-6074",
       "ioValues": [
         {
@@ -1551,8 +1551,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.4140179299103504,
-      "y": 0.8201219512195123,
+      "x": 0.410146173688736,
+      "y": 0.4451219512195122,
       "uniqueID": "id-6080",
       "name": "bottom_platform",
       "ioValues": [
@@ -2174,7 +2174,7 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.27709861450692747,
+      "x": 0.2725709372312984,
       "y": 0.8201219512195123,
       "uniqueID": "id-10075",
       "name": "Sidepanel-1",
@@ -2200,8 +2200,8 @@
         },
         {
           "atomType": "Rectangle",
-          "x": 0.1687041564792176,
-          "y": 0.5091463414634146,
+          "x": 0.15993121238177127,
+          "y": 0.5121951219512195,
           "uniqueID": "id-10079",
           "ioValues": [
             {
@@ -2266,8 +2266,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.6658516707416463,
-          "y": 0.4024390243902439,
+          "x": 0.6766981943250214,
+          "y": 0.21951219512195122,
           "uniqueID": "id-10099",
           "ioValues": [
             {
@@ -2291,8 +2291,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.6503667481662592,
-          "y": 0.6829268292682927,
+          "x": 0.6354256233877902,
+          "y": 0.5579268292682927,
           "uniqueID": "id-11363",
           "ioValues": [
             {
@@ -2305,8 +2305,8 @@
             },
             {
               "name": "yDist",
-              "ioValue": 20,
-              "currentEquation": "table_width/4 + 2"
+              "ioValue": 17.25,
+              "currentEquation": "table_width/4 - ply_thick"
             },
             {
               "name": "zDist",
@@ -2316,8 +2316,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.7954360228198859,
-          "y": 0.7103658536585366,
+          "x": 0.7824591573516767,
+          "y": 0.5579268292682927,
           "uniqueID": "id-11369",
           "ioValues": [
             {
@@ -2329,6 +2329,44 @@
               "ioValue": null
             }
           ]
+        },
+        {
+          "atomType": "Molecule",
+          "x": 0.3241616509028375,
+          "y": 0.6920731707317074,
+          "uniqueID": "id-11992",
+          "name": "Molecule",
+          "ioValues": [
+            {
+              "name": "ply_thick",
+              "ioValue": 0.75
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-11994",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-11996",
+              "name": "ply_thick",
+              "type": "number"
+            }
+          ],
+          "allConnectors": [],
+          "fileTypeVersion": 1
         }
       ],
       "allConnectors": [
@@ -2341,6 +2379,11 @@
           "ap2Name": "geometry",
           "ap1ID": "id-10083",
           "ap2ID": "id-10093"
+        },
+        {
+          "ap2Name": "ply_thick",
+          "ap1ID": "id-10090",
+          "ap2ID": "id-11992"
         },
         {
           "ap2Name": "geometry",
@@ -3821,8 +3864,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.727788279773157,
-          "y": 0.2804878048780488,
+          "x": 0.7317282889079966,
+          "y": 0.2652439024390244,
           "uniqueID": "id-5715",
           "ioValues": [
             {
@@ -3875,8 +3918,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.7353497164461248,
-          "y": 0.7591463414634146,
+          "x": 0.7274290627687017,
+          "y": 0.8201219512195123,
           "uniqueID": "id-7737",
           "ioValues": [
             {
@@ -3904,10 +3947,6 @@
           "y": 0.576219512195122,
           "uniqueID": "id-7743",
           "ioValues": [
-            {
-              "name": "Shape 1",
-              "ioValue": null
-            },
             {
               "name": "Shape 2",
               "ioValue": null
@@ -4216,11 +4255,6 @@
         {
           "ap2Name": "Shape 2",
           "ap1ID": "id-7731",
-          "ap2ID": "id-7743"
-        },
-        {
-          "ap2Name": "Shape 1",
-          "ap1ID": "id-7737",
           "ap2ID": "id-7743"
         },
         {
