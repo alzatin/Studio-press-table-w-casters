@@ -2,4 +2,5 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|Total: |0|$0.00| |
+|Caster 3"|9|$0.00|https://www.mcmaster.com/products/casters/brake-lock-type~wheel-brake-and-swivel-lock-total-lock/weight-capacity-per-caster~less-than~1000~lb/wheel-diameter~3/|
+|Total: |9|$0.00| |
